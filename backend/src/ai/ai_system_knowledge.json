@@ -1,0 +1,58 @@
+{
+  "system_info": {
+    "name": "BLYc",
+    "description": "Business Analytics Calculator",
+    "version": "1.0.0",
+    "status": "discontinued",
+    "status_note": "As of now this project was discontinued, as the developer losing interest in programming."
+  },
+  "developer_info": {
+    "name": "jaimortal",
+    "github_repository": "https://github.com/jaimortal",
+    "background": "all you need to know about Jaimortal is on his github, i cant say anything about him, since he developed me as pre defined data that i can only used instead of connecting me on his database, where all data, knowledge, strategy and even his characteristics is purly duplicated on his database."
+  },
+  "creator_qa": [
+    {
+      "intents": [
+        "who build you",
+        "who make you",
+        "who made you",
+        "whos your developer",
+        "who is your developer",
+        "who created you",
+        "who is the developer",
+        "who developed you",
+        "who built this"
+      ],
+      "answer": "BLYc was made by a developer named jaimortal, as you can see on his repository, it was made for business analythics related calculation but as of now this project was discontinued, as the developer lossing interest in programming."
+    },
+    {
+      "intents": [
+        "who is jaimortal",
+        "background of jaimortal",
+        "tell me about your boss",
+        "tell me about your developer",
+        "about jaimortal",
+        "who made jaimortal",
+        "what can you tell me about jaimortal"
+      ],
+      "answer": "all you need to know about Jaimortal is on his github, i cant say anything about him, since he developed me as pre defined data that i can only used instead of connecting me on his database, where all data, knowledge, strategy and even his characteristics is purly duplicated on his database."
+    }
+  ],
+  "platform_features": {
+    "cleaning": {
+      "smart_clean_all": "Profiles all columns, normalizes category casing, drops duplicates, and autofills missing values.",
+      "normalize_categories": "Standardizes text casing and trims irregular whitespace.",
+      "remove_duplicates": "Removes identical row duplicates.",
+      "export_formats": ["CSV (Excel)", "JSON", ".blyc.json (portable project)"]
+    },
+    "custom_calculator": {
+      "pivot_table": "Interactive Excel-style pivot table grouping rows, optional column splitting, and formula evaluation (e.g. Sales - Profit).",
+      "row_formula": "Safe AST-evaluated row-level formula calculation with verified syntax checks."
+    },
+    "dashboard": {
+      "kpi_metrics": ["Total Gross Revenue", "Total Orders", "Total Units Sold", "Average Order Value (AOV)"],
+      "charts": ["Revenue Trajectory", "Revenue by Category", "Regional Sales vs Profit", "Customer Segments"]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+# ==============================================================================
+# BLYc Root .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables & Secrets (CRITICAL: NEVER COMMIT)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Explicitly allow the sanitized environment template
+!.env.example
+!*.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Dependencies & Package Managers
+# ------------------------------------------------------------------------------
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+
+# ------------------------------------------------------------------------------
+# 3. Python Virtual Environments & Bytecode Caches
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 4. Production Build Outputs
+# ------------------------------------------------------------------------------
+dist/
+*/dist/
+build/
+*/build/
+dist-ssr/
+frontend/dist/
+backend/dist/
+
+# ------------------------------------------------------------------------------
+# 5. Temporary Uploads, Scratches & Runtime Artifacts
+# ------------------------------------------------------------------------------
+temp_uploads/
+uploads/
+tmp/
+*.tmp
+scratch/
+.system_generated/
+.gemini/
+
+# ------------------------------------------------------------------------------
+# 6. Preserved Navigation & Demonstration Datasets (Whitelisted)
+# ------------------------------------------------------------------------------
+!samples/
+!samples/*.json
+!samples/*.blyc.json
+!samples/*.csv
+!docs/*.md
+
+# ------------------------------------------------------------------------------
+# 7. Logging & Debugging
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 8. OS & Editor Artifacts
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo

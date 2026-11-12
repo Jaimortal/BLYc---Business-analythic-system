@@ -1,0 +1,11 @@
+Order_ID,Order_Date,Product,Category,Selling_Price,Cost,Quantity,Discount
+ORD-1001,2026-03-01,Mechanical Keyboard Pro,Electronics,129.99,65.00,14,0
+ORD-1002,2026-03-01,Wireless Gaming Mouse,Electronics,59.99,25.00,22,5
+ORD-1003,2026-03-02,Desk Mat XL Stitch,Accessories,24.99,9.50,45,10
+ORD-1004,2026-03-02,USB-C Dual 4K Hub,Accessories,49.99,18.00,18,0
+ORD-1005,2026-03-03,Noise-Canceling Headset,Audio,149.99,70.00,12,0
+ORD-1006,2026-03-03,Bluetooth Studio Speaker,Audio,89.99,42.00,16,10
+ORD-1007,2026-03-04,Mechanical Keyboard Pro,Electronics,129.99,65.00,8,0
+ORD-1008,2026-03-04,Ergonomic Wrist Rest,Accessories,15.99,5.00,30,0
+ORD-1009,2026-03-05,Wireless Gaming Mouse,Electronics,59.99,25.00,15,0
+ORD-1010,2026-03-05,4K Web Camera Ultra,Electronics,79.99,35.00,10,5

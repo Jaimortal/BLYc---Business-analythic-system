@@ -1,0 +1,84 @@
+{
+  "format": "BLYc",
+  "schema_version": "1.0.0",
+  "project": {
+    "id": "proj_sample_store",
+    "name": "Perez Retail Electronics Q1",
+    "created_at": "2026-03-01T08:00:00.000Z",
+    "updated_at": "2026-03-05T18:00:00.000Z"
+  },
+  "dataset": {
+    "metadata": {
+      "source": "Sample Electronics Store",
+      "records_count": 10,
+      "columns_count": 8
+    },
+    "columns": [
+      { "name": "Order_ID", "data_type": "string", "semantic_role": "id" },
+      { "name": "Order_Date", "data_type": "string", "semantic_role": "date" },
+      { "name": "Product", "data_type": "string", "semantic_role": "product" },
+      { "name": "Category", "data_type": "string", "semantic_role": "category" },
+      { "name": "Selling_Price", "data_type": "numeric", "semantic_role": "price" },
+      { "name": "Cost", "data_type": "numeric", "semantic_role": "cost" },
+      { "name": "Quantity", "data_type": "numeric", "semantic_role": "quantity" },
+      { "name": "Discount", "data_type": "numeric", "semantic_role": "discount" }
+    ],
+    "records": [
+      { "Order_ID": "ORD-1001", "Order_Date": "2026-03-01", "Product": "Mechanical Keyboard Pro", "Category": "Electronics", "Selling_Price": 129.99, "Cost": 65.0, "Quantity": 14, "Discount": 0 },
+      { "Order_ID": "ORD-1002", "Order_Date": "2026-03-01", "Product": "Wireless Gaming Mouse", "Category": "Electronics", "Selling_Price": 59.99, "Cost": 25.0, "Quantity": 22, "Discount": 5 },
+      { "Order_ID": "ORD-1003", "Order_Date": "2026-03-02", "Product": "Desk Mat XL Stitch", "Category": "Accessories", "Selling_Price": 24.99, "Cost": 9.5, "Quantity": 45, "Discount": 10 },
+      { "Order_ID": "ORD-1004", "Order_Date": "2026-03-02", "Product": "USB-C Dual 4K Hub", "Category": "Accessories", "Selling_Price": 49.99, "Cost": 18.0, "Quantity": 18, "Discount": 0 },
+      { "Order_ID": "ORD-1005", "Order_Date": "2026-03-03", "Product": "Noise-Canceling Headset", "Category": "Audio", "Selling_Price": 149.99, "Cost": 70.0, "Quantity": 12, "Discount": 0 },
+      { "Order_ID": "ORD-1006", "Order_Date": "2026-03-03", "Product": "Bluetooth Studio Speaker", "Category": "Audio", "Selling_Price": 89.99, "Cost": 42.0, "Quantity": 16, "Discount": 10 },
+      { "Order_ID": "ORD-1007", "Order_Date": "2026-03-04", "Product": "Mechanical Keyboard Pro", "Category": "Electronics", "Selling_Price": 129.99, "Cost": 65.0, "Quantity": 8, "Discount": 0 },
+      { "Order_ID": "ORD-1008", "Order_Date": "2026-03-04", "Product": "Ergonomic Wrist Rest", "Category": "Accessories", "Selling_Price": 15.99, "Cost": 5.0, "Quantity": 30, "Discount": 0 },
+      { "Order_ID": "ORD-1009", "Order_Date": "2026-03-05", "Product": "Wireless Gaming Mouse", "Category": "Electronics", "Selling_Price": 59.99, "Cost": 25.0, "Quantity": 15, "Discount": 0 },
+      { "Order_ID": "ORD-1010", "Order_Date": "2026-03-05", "Product": "4K Web Camera Ultra", "Category": "Electronics", "Selling_Price": 79.99, "Cost": 35.0, "Quantity": 10, "Discount": 5 }
+    ]
+  },
+  "data_quality": {
+    "issues": [],
+    "normalization_rules": [],
+    "cleaning_history": []
+  },
+  "analytics": {
+    "metrics": {
+      "total_revenue": 10476.36,
+      "total_orders": 10,
+      "total_quantity_sold": 190
+    },
+    "trends": {},
+    "comparisons": {}
+  },
+  "calculations": [
+    {
+      "id": "calc_profit",
+      "name": "Gross_Profit",
+      "formula": "([Selling_Price] - [Cost]) * [Quantity]",
+      "created_at": "2026-03-05T18:00:00.000Z"
+    }
+  ],
+  "dashboard": {
+    "tabs": [
+      {
+        "id": "tab_exec",
+        "title": "Executive Summary",
+        "widgets": [
+          { "id": "w_rev", "type": "metric", "title": "Total Revenue" },
+          { "id": "w_chart", "type": "chart", "title": "Sales Trajectory" }
+        ]
+      }
+    ]
+  },
+  "ai_context": {
+    "business_type": "Electronics & Computer Accessories Retailer",
+    "column_mappings": {
+      "Selling_Price": "price",
+      "Cost": "cost",
+      "Quantity": "quantity",
+      "Product": "product",
+      "Category": "category"
+    },
+    "analysis_preferences": {}
+  }
+}
